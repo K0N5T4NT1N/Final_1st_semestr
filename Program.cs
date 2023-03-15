@@ -33,7 +33,7 @@ string[] FilterArray(string[] array, int value)
     for (int i = 0; i < array.Length; i++)
     {
         char[] text = array[i].ToCharArray();
-        if (text.Length >= value)
+        if (text.Length <= value)
         {
             result[count] = array[i];
             count++;
